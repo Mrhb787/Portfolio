@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <Stack
       sx={{
-        minHeight: "calc(100vh - 65px)",
+        minHeight: "calc(110vh - 65px)",
         width: "100%",
         backgroundColor: "#0A1929",
       }}
