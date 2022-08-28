@@ -9,7 +9,11 @@ import Loader from "../Small Components/Loader";
 const Home = () => {
   return (
     <Stack
-      sx={{minHeight: "calc(100vh - 65px)", width: "100%"}}
+      sx={{
+        minHeight: "calc(100vh - 65px)",
+        width: "100%",
+        backgroundColor: "#0A1929",
+      }}
       justifyContent="center"
       alignItems="center"
     >
