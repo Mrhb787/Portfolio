@@ -5,6 +5,7 @@ import "./App.css";
 // Components
 import Home from "../Home/Home";
 import NavBar from "../Nav/NavBar";
+import Resume from "../Resume/Resume";
 import PageNotFound from "../assets/NotFound";
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/coding" element={<Home />} />
         <Route path="/projects" element={<Home />} />
         <Route path="/contact" element={<Home />} />
-        <Route path="/resume" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
