@@ -3,6 +3,7 @@ import {AppBar, Toolbar} from "@mui/material";
 
 // Components
 import NavLinks from "./NavLinks";
+import Login from "../Auth/Login";
 
 // assets
 import NavTitle from "../assets/NavTitle";
@@ -13,6 +14,7 @@ const TopBar = () => {
       <Toolbar variant="dense" sx={{width: "100%"}}>
         <NavTitle />
         <NavLinks />
+        <Login />
       </Toolbar>
     </AppBar>
   );

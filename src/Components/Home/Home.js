@@ -8,7 +8,7 @@ import {Stack} from "@mui/material";
 
 const Home = () => {
   return (
-    <Stack sx={{height: "105vh", width: "100%"}}>
+    <Stack>
       <h1>Home</h1>
     </Stack>
   );
