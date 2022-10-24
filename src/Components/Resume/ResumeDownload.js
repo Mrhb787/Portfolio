@@ -15,9 +15,9 @@ const generateDownloadLink = (url) => {
 };
 
 const ResumeDownload = ({url}) => {
-  const downloadLink = generateDownloadLink(url);
-
+  // download resume
   const handleClick = () => {
+    const downloadLink = generateDownloadLink(url);
     window.open(downloadLink, "_blank");
   };
   return (
