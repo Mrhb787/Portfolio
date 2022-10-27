@@ -27,6 +27,7 @@ const LoadingButton = ({
       size={size}
       sx={sx}
       onClick={onClick}
+      variant={variant}
     >
       {value}
     </Button>
