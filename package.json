@@ -1,18 +1,20 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "author": "Mrhb787",
+  "author": "mrhb787",
   "description": "Professional Portfolio",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mrhb787/Portfolio.git"
   },
+  "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
     "@mui/icons-material": "^5.11.6",
     "@mui/material": "^5.13.2",
     "firebase": "^9.12.1",
+    "gh-pages": "^5.0.0",
     "notistack": "^2.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -45,9 +47,9 @@
     ]
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1",
     "@svgr/plugin-svgo": "^8.0.1",
-    "@svgr/webpack": "^8.0.1"
+    "@svgr/webpack": "^8.0.1",
+    "react-scripts": "^5.0.1"
   },
   "overrides": {
     "@svgr/webpack": "$@svgr/webpack",
