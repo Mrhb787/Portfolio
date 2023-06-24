@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@svgr/plugin-svgo": "^8.0.1",
     "@svgr/webpack": "^8.0.1",
     "react-scripts": "^5.0.1"

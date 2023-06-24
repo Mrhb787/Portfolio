@@ -1,0 +1,22 @@
+/* Preloader css */
+.preloader {
+    position: fixed;
+}
+
+.preloader-img {
+    height: 100px;
+    width: auto;
+}
+
+.preloader-text {
+    font-size: 48px !important;
+    font-family: 'Rubik Iso', cursive !important;
+}
+
+.videobg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
