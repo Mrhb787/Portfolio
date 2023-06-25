@@ -1,5 +1,6 @@
 import {Stack, Typography} from "@mui/material";
 
+import LoaderImg from "../gifs/preloader.gif";
 const Preloader = () => {
   return (
     <Stack
@@ -9,11 +10,7 @@ const Preloader = () => {
       spacing={2}
       className="preloader"
     >
-      <img
-        src="/gifs/preloader.gif"
-        alt="Loading Portfolio"
-        className="preloader-img"
-      />
+      <img src={LoaderImg} alt="Loading Portfolio" className="preloader-img" />
       <Typography className="preloader-text">Loading</Typography>
     </Stack>
   );

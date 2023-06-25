@@ -1,5 +1,6 @@
 import {AppBar, Toolbar, Typography} from "@mui/material";
 import "./Nav.css";
+import NavLogo from "../../assets/images/navLogo.png";
 
 import NavLinks from "./NavLinks";
 const Nav = () => {
@@ -7,7 +8,7 @@ const Nav = () => {
     <AppBar position="fixed">
       <Toolbar>
         <div className="nav-head">
-          <img src="/images/navLogo.png" alt="" className="nav-logo" />
+          <img src={NavLogo} alt="" className="nav-logo" />
           <Typography className="nav-title">Abhishek | アビシェク</Typography>
         </div>
         <NavLinks />

@@ -2,6 +2,8 @@ import {Stack, Typography, Button} from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
 import {resumeURL} from "../../assets/constants";
+import ProfileImg from "../../assets/images/profile.jpeg";
+
 const About = ({loading}) => {
   return (
     <Stack
@@ -11,7 +13,7 @@ const About = ({loading}) => {
       className={loading ? "" : "fadeIn"}
       sx={{minHeight: "calc(100vh)"}}
     >
-      <img src="/images/profile.jpeg" alt="Developer" className="about-img" />
+      <img src={ProfileImg} alt="Developer" className="about-img" />
       <Stack spacing={2} sx={{maxWidth: "500px"}}>
         <Stack direction="row" spacing={2} alignItems="center">
           <Typography className="title-1" variant="h1">

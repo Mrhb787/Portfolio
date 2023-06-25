@@ -4,6 +4,9 @@ import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import WorkIcon from "@mui/icons-material/Work";
 
 import {resumeURL} from "../../assets/constants";
+import GokuHappyGif from "../../assets/gifs/goku-happy.gif";
+import HomeImg from "../../assets/images/homeimg.png";
+
 const LandingPage = ({loading}) => {
   return (
     <Stack
@@ -20,7 +23,7 @@ const LandingPage = ({loading}) => {
           </Typography>
           <div className="title-1-line">
             <img
-              src="/gifs/goku-happy.gif"
+              src={GokuHappyGif}
               alt="happy-happy-happy"
               className="title-1-line-img"
             />
@@ -54,7 +57,7 @@ const LandingPage = ({loading}) => {
           </Button>
         </Stack>
       </Stack>
-      <img src="/images/homeimg.png" alt="Developer" className="home-img" />
+      <img src={HomeImg} alt="Developer" className="home-img" />
     </Stack>
   );
 };

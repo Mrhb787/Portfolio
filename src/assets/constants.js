@@ -167,19 +167,19 @@ export const ProjectDetails = [
 
 export const ContactDetails = [
   {
-    imgSrc: "/images/gmail.png",
+    imgSrc: "https://cdn-icons-png.flaticon.com/512/5968/5968534.png",
     type: "Email (work)",
     value: "abhishekworks787@gmail.com",
     url: "mailto:abhishekworks787@gmail.com",
   },
   {
-    imgSrc: "/images/linkedin.png",
+    imgSrc: "https://cdn-icons-png.flaticon.com/512/3536/3536505.png",
     type: "Linkedin",
     value: "@abhishekworks787",
     url: "https://www.linkedin.com/in/abhishekworks787",
   },
   {
-    imgSrc: "/images/instagram.png",
+    imgSrc: "https://cdn-icons-png.flaticon.com/512/1384/1384063.png",
     type: "Instagram",
     value: "@senpiesengar",
     url: "https://www.instagram.com/senpiesengar/",
