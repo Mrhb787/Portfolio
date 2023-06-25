@@ -1,15 +1,20 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.a98d5d15.css",
-    "main.js": "/Portfolio/static/js/main.40a85f7a.js",
+    "main.js": "/Portfolio/static/js/main.46c23726.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/anime-bg.mp4": "/Portfolio/static/media/anime-bg.697891302f68f39b2352.mp4",
+    "static/media/profile.jpeg": "/Portfolio/static/media/profile.660be810cb8702374b09.jpeg",
+    "static/media/preloader.gif": "/Portfolio/static/media/preloader.3998eaf546d6c6f22d84.gif",
+    "static/media/homeimg.png": "/Portfolio/static/media/homeimg.89992da63e7b356291c1.png",
+    "static/media/goku-happy.gif": "/Portfolio/static/media/goku-happy.a3eacb88aeee6972f53f.gif",
     "index.html": "/Portfolio/index.html",
     "main.a98d5d15.css.map": "/Portfolio/static/css/main.a98d5d15.css.map",
-    "main.40a85f7a.js.map": "/Portfolio/static/js/main.40a85f7a.js.map",
+    "main.46c23726.js.map": "/Portfolio/static/js/main.46c23726.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a98d5d15.css",
-    "static/js/main.40a85f7a.js"
+    "static/js/main.46c23726.js"
   ]
 }
