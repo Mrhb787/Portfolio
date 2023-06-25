@@ -139,3 +139,24 @@ export const ProjectDetails = [
     skills: ["Frontend Development", "HTML", "CSS", "Javascript", "ReactJs"],
   },
 ];
+
+export const ContactDetails = [
+  {
+    imgSrc: "/images/gmail.png",
+    type: "Email (work)",
+    value: "abhishekworks787@gmail.com",
+    url: "mailto:abhishekworks787@gmail.com",
+  },
+  {
+    imgSrc: "/images/linkedin.png",
+    type: "Linkedin",
+    value: "@abhishekworks787",
+    url: "https://www.linkedin.com/in/abhishekworks787",
+  },
+  {
+    imgSrc: "/images/instagram.png",
+    type: "Instagram",
+    value: "@senpiesengar",
+    url: "https://www.instagram.com/senpiesengar/",
+  },
+];

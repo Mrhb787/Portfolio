@@ -8,6 +8,7 @@ import About from "./about";
 import Education from "./education";
 import Experience from "./experience";
 import Projects from "./projects";
+import Contact from "./contact";
 
 // constants
 import {preloaderToken, preloaderTimeout} from "../../assets/constants";
@@ -40,6 +41,7 @@ const Home = () => {
               <Education loading={loading} />
               <Experience loading={loading} />
               <Projects loading={loading} />
+              <Contact loading={loading} />
             </div>
           </div>
         </div>
