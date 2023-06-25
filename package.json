@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "mrhb787",
   "description": "Professional Portfolio",
+  "homepage": "http://mrhb787.github.io/portfolio",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mrhb787/Portfolio.git"
@@ -23,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -49,6 +52,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@svgr/plugin-svgo": "^8.0.1",
     "@svgr/webpack": "^8.0.1",
+    "gh-pages": "^5.0.0",
     "react-scripts": "^5.0.1"
   },
   "overrides": {
