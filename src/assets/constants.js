@@ -2,6 +2,10 @@
 export const preloaderToken = "abhishekworks787_portfolio";
 export const preloaderTimeout = 5000;
 
+// resume
+export const resumeURL =
+  "https://drive.google.com/uc?export=download&id=1HGcazcfIslglcOJSF8ArD9qIEteliqeN";
+
 // Education
 export const EducationDetails = [
   {
@@ -112,7 +116,7 @@ export const ExperienceDetails = [
 export const ProjectDetails = [
   {
     imgSrc: "https://bookshlf.in/images/smallLogo.svg",
-    company: "Bookshlf (ARA Technologies)",
+    title: "Bookshlf (ARA Technologies)",
     position: "Frontend Developer",
     time: "Jan 2022 - Present",
     work: [
@@ -137,6 +141,27 @@ export const ProjectDetails = [
       },
     ],
     skills: ["Frontend Development", "HTML", "CSS", "Javascript", "ReactJs"],
+  },
+  {
+    imgSrc: "https://contestmania.web.app/images/logos/logo.png",
+    title: "ContestMania",
+    position: "Frontend Developer",
+    work: [
+      {
+        title: "About",
+        content:
+          "A platform for tracking your competitive progress on various competitive coding websites",
+      },
+      {
+        title: "Components Fixes",
+        content: "Fixed UI components and standarized them",
+      },
+      {
+        title: "Added Compiler For Code Compilation",
+        content: "Added an opensource compiler to compile the code",
+      },
+    ],
+    skills: ["Bootstrap", "Redux", "HTML", "CSS", "Javascript"],
   },
 ];
 

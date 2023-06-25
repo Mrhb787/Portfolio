@@ -1,6 +1,7 @@
 import {Stack, Typography, Button} from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
+import {resumeURL} from "../../assets/constants";
 const About = ({loading}) => {
   return (
     <Stack
@@ -8,7 +9,7 @@ const About = ({loading}) => {
       alignItems="center"
       direction="row"
       className={loading ? "" : "fadeIn"}
-      sx={{minHeight: "calc(100vh - 98px)"}}
+      sx={{minHeight: "calc(100vh)"}}
     >
       <img src="/images/profile.jpeg" alt="Developer" className="about-img" />
       <Stack spacing={2} sx={{maxWidth: "500px"}}>
@@ -31,6 +32,9 @@ const About = ({loading}) => {
           variant="contained"
           color="warning"
           endIcon={<FileDownloadIcon />}
+          onClick={() => {
+            window.open(resumeURL, "_blank");
+          }}
         >
           Download CV
         </Button>

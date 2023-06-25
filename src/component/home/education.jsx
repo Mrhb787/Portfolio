@@ -24,7 +24,7 @@ const Education = ({loading}) => {
   return (
     <Stack
       className={loading ? "" : "fadeIn"}
-      sx={{minHeight: "calc(100vh - 98px)"}}
+      sx={{minHeight: "calc(100vh)"}}
       spacing={1}
     >
       <Typography className="title-1" variant="h1">

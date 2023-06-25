@@ -3,6 +3,7 @@ import {Stack, Typography, Button} from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import WorkIcon from "@mui/icons-material/Work";
 
+import {resumeURL} from "../../assets/constants";
 const LandingPage = ({loading}) => {
   return (
     <Stack
@@ -45,6 +46,9 @@ const LandingPage = ({loading}) => {
             variant="outlined"
             color="warning"
             endIcon={<FileDownloadIcon />}
+            onClick={() => {
+              window.open(resumeURL, "_blank");
+            }}
           >
             Download CV
           </Button>

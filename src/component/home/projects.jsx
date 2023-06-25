@@ -2,12 +2,12 @@ import {Fragment} from "react";
 import {Stack, Typography, Divider, Chip} from "@mui/material";
 import {ProjectDetails} from "../../assets/constants";
 
-const ProjectItem = ({imgSrc, company, position, time, work, skills}) => {
+const ProjectItem = ({imgSrc, title, position, time, work, skills}) => {
   return (
     <Stack direction="row" spacing={3} className="educationItem">
       <img src={imgSrc} alt={imgSrc} className="item-img" />
       <Stack spacing={1}>
-        <Typography variant="h5">{company}</Typography>
+        <Typography variant="h5">{title}</Typography>
         <Divider />
         <Stack direction="row" alignItems="center" spacing={3}>
           <Typography>{position}</Typography>
@@ -39,8 +39,8 @@ const Projects = ({loading}) => {
   return (
     <Stack
       className={loading ? "" : "fadeIn"}
-      sx={{minHeight: "calc(100vh - 98px)"}}
-      mt={6}
+      sx={{minHeight: "calc(100vh)"}}
+      mt={2}
       spacing={1}
     >
       <Typography className="title-1" variant="h1">
@@ -52,7 +52,7 @@ const Projects = ({loading}) => {
           <Fragment key={e.company}>
             <ProjectItem
               imgSrc={e.imgSrc}
-              company={e.company}
+              title={e.title}
               position={e.position}
               time={e.time}
               work={e.work}

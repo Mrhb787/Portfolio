@@ -4,7 +4,7 @@ import {ContactDetails} from "../../assets/constants";
 
 const ContactItem = ({imgSrc, type, value, url}) => {
   return (
-    <Stack direction="row" spacing={3} className="contactItem">
+    <Stack direction="row" spacing={1} className="contactItem">
       <img src={imgSrc} alt={imgSrc} className="item-img" />
       <Stack spacing={1}>
         <Typography variant="h5">{type}</Typography>
@@ -30,7 +30,7 @@ const Contact = ({loading}) => {
       <div className="title-1-line"></div>
       <Stack spacing={2} direction="row">
         {ContactDetails.map((e) => (
-          <Fragment key={e.company}>
+          <Fragment key={e.type}>
             <ContactItem
               imgSrc={e.imgSrc}
               type={e.type}
