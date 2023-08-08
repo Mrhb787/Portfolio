@@ -18,9 +18,15 @@ export const NavLinkNames = [
   "Contact",
 ];
 
+// Landing page bg
+export const LandingPageBG = "https://wallpaperaccess.com/full/312629.jpg";
+
 // resume
 export const resumeURL =
   "https://drive.google.com/uc?export=download&id=1HGcazcfIslglcOJSF8ArD9qIEteliqeN";
+
+// Github
+export const GITHUB = "mrhb787";
 
 // Education
 export const EducationDetails = [
@@ -201,3 +207,16 @@ export const ContactDetails = [
     url: "https://www.instagram.com/senpiesengar/",
   },
 ];
+
+// Contact
+export const Contact = {
+  email: {primary: "abhishekworks787@gmail.com", others: []},
+};
+
+// Hire Mail Data
+export const HireMailData = {
+  subject: "",
+  cc: "",
+  bcc: "",
+  body: "",
+};

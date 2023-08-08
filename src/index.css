@@ -8,3 +8,11 @@
     font-family: 'DM Sans', sans-serif;
     color: white;
 }
+
+.MuiTypography-root {
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+.section {
+    min-height: calc(100vh - 64px);
+}

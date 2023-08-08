@@ -1,0 +1,49 @@
+.MuiAppBar-root {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.nav-head {
+    padding: 5px 0px;
+    flex-grow: 1;
+}
+
+.nav-title {
+    font-size: 18px !important;
+    font-weight: bolder;
+    letter-spacing: 0.5px !important;
+}
+
+.navlink {
+    display: inline-block;
+    color: #8f8f8f;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.navlink-active {
+    color: #ffffff !important;
+}
+
+.navlink:after {
+    display: block;
+    padding: 2px;
+    content: '';
+    border-bottom: solid 1px #ffffff;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.navlink:hover:after {
+    transform: scaleX(1);
+}
+
+.navlink-active:after {
+    transform: scaleX(1);
+}
+
+
+@media screen and (max-width: 600px) {
+    .base-link.MuiTypography-root {
+        font-size: 12px;
+    }
+}

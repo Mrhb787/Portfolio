@@ -3,61 +3,61 @@ import {Stack, Typography, Button} from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import WorkIcon from "@mui/icons-material/Work";
 
-import {resumeURL} from "../../assets/constants";
-import GokuHappyGif from "../../assets/gifs/goku-happy.gif";
-import HomeImg from "../../assets/images/homeimg.png";
+import {resumeURL, LandingPageBG} from "../../assets/constants";
+import {screenWidth} from "../../assets/utils";
 
-const LandingPage = ({loading}) => {
+const LandingPageLeft = () => {
+  return (
+    <Stack spacing={1}>
+      <Typography variant="h1">Hi</Typography>
+      <Typography variant="h2">It's Abhishek</Typography>
+      <Typography variant="h5">OTAKU | Backend Engineer</Typography>
+      <Typography variant="body">
+        Experience in building microservices and scalable systems
+      </Typography>
+      <Stack direction="row" spacing={2}>
+        <Button
+          className="hireme-btn"
+          variant="outlined"
+          color="warning"
+          endIcon={<WorkIcon />}
+        >
+          Hire Me
+        </Button>
+        <Button
+          className="getcv-btn"
+          variant="outlined"
+          color="warning"
+          endIcon={<FileDownloadIcon />}
+          onClick={() => {
+            window.open(resumeURL, "_blank");
+          }}
+        >
+          Download CV
+        </Button>
+      </Stack>
+    </Stack>
+  );
+};
+
+const LandingPageRight = () => {
+  return <div style={{width: screenWidth() * 0.4}}></div>;
+};
+
+const LandingPage = () => {
   return (
     <Stack
       justifyContent="space-evenly"
       alignItems="center"
       direction="row"
-      className={loading ? "" : "fadeIn"}
-      sx={{minHeight: "calc(100vh)"}}
+      className="fadeIn section"
+      sx={{
+        background: `url(${LandingPageBG})`,
+        backgroundSize: "contain",
+      }}
     >
-      <Stack spacing={2}>
-        <Stack direction="row" spacing={2} alignItems="center">
-          <Typography className="title-1" variant="h1">
-            Hello
-          </Typography>
-          <div className="title-1-line">
-            <img
-              src={GokuHappyGif}
-              alt="happy-happy-happy"
-              className="title-1-line-img"
-            />
-          </div>
-        </Stack>
-        <Typography className="title-2" variant="h2">
-          I am Abhishek
-        </Typography>
-        <Typography className="title-3" variant="h5">
-          OTAKU | Full Stack Developer
-        </Typography>
-        <Stack direction="row" spacing={3}>
-          <Button
-            className="hireme-btn"
-            variant="contained"
-            color="warning"
-            endIcon={<WorkIcon />}
-          >
-            Hire Me
-          </Button>
-          <Button
-            className="getcv-btn"
-            variant="outlined"
-            color="warning"
-            endIcon={<FileDownloadIcon />}
-            onClick={() => {
-              window.open(resumeURL, "_blank");
-            }}
-          >
-            Download CV
-          </Button>
-        </Stack>
-      </Stack>
-      <img src={HomeImg} alt="Developer" className="home-img" />
+      <LandingPageLeft />
+      <LandingPageRight />
     </Stack>
   );
 };

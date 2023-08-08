@@ -1,5 +1,5 @@
 import {AppBar, Toolbar, Typography} from "@mui/material";
-import "./Nav.css";
+import "../../assets/static/nav.css";
 import {NavTitle} from "../../assets/constants";
 import NavLinks from "./NavLinks";
 const Nav = () => {
