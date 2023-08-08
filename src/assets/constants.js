@@ -2,6 +2,22 @@
 export const preloaderToken = "abhishekworks787_portfolio";
 export const preloaderTimeout = 5000;
 
+// Nav Title
+export const NavTitle = {
+  logo: "",
+  title: "Abhishek | Software Engineer",
+};
+
+// Navlinks
+export const NavLinkNames = [
+  "Home",
+  "About",
+  "Education",
+  "Experience",
+  "Projects",
+  "Contact",
+];
+
 // resume
 export const resumeURL =
   "https://drive.google.com/uc?export=download&id=1HGcazcfIslglcOJSF8ArD9qIEteliqeN";
