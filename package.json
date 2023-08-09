@@ -10,11 +10,11 @@
   },
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.8",
-    "@emotion/styled": "^11.10.8",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.6",
+    "@mui/joy": "^5.0.0-beta.1",
     "@mui/material": "^5.13.2",
-    "firebase": "^9.12.1",
     "notistack": "^2.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -50,13 +50,16 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@grpc/proto-loader": "^0.7.8",
     "@svgr/plugin-svgo": "^8.0.1",
     "@svgr/webpack": "^8.0.1",
     "gh-pages": "^5.0.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "semver": "^7.5.4"
   },
   "overrides": {
     "@svgr/webpack": "$@svgr/webpack",
-    "@svgr/plugin-svgo": "$@svgr/plugin-svgo"
+    "@svgr/plugin-svgo": "$@svgr/plugin-svgo",
+    "semver": "^7.5.4"
   }
 }

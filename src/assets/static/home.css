@@ -3,15 +3,13 @@
     width: 100%;
     background-color: rgb(0, 0, 0);
     position: relative;
+    color: white;
 }
 
-.hireme-btn,
-.getcv-btn {
-    width: 120px;
+.landing-btn {
+    width: 200px;
     border-color: red;
     text-transform: capitalize !important;
-    font-size: 12px !important;
-    padding: 5px !important;
 }
 
 .about-img {

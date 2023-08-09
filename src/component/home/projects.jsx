@@ -35,32 +35,27 @@ const ProjectItem = ({imgSrc, title, position, time, work, skills}) => {
   );
 };
 
-const Projects = ({loading}) => {
+const Projects = () => {
   return (
-    <Stack
-      className={loading ? "" : "fadeIn"}
-      sx={{minHeight: "calc(100vh)"}}
-      mt={2}
-      spacing={1}
-    >
-      <Typography className="title-1" variant="h1">
-        Projects
-      </Typography>
-      <div className="title-1-line"></div>
-      <Stack spacing={2}>
-        {ProjectDetails.map((e) => (
-          <Fragment key={e.company}>
-            <ProjectItem
-              imgSrc={e.imgSrc}
-              title={e.title}
-              position={e.position}
-              time={e.time}
-              work={e.work}
-              skills={e.skills}
-            />
-          </Fragment>
-        ))}
-      </Stack>
+    <Stack className="fadeIn" mt={2} spacing={1}>
+      <Typography variant="h1">Projects</Typography>
+
+      {/* <Stack spacing={2}>
+        {ProjectDetails.map((e) => {
+          return (
+            <Fragment key={e.company}>
+              <ProjectItem
+                imgSrc={e.imgSrc}
+                title={e.title}
+                position={e.position}
+                time={e.time}
+                work={e.work}
+                skills={e.skills}
+              />
+            </Fragment>
+          );
+        })}
+      </Stack> */}
     </Stack>
   );
 };

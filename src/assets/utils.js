@@ -12,5 +12,12 @@ export const screenWidth = () => {
 
 // create drive link downloadable url
 export const dispatchDriveDownloadLink = (driveLink) => {
-  // TODO: create dispatcher to generate drive download link
+  const downloadLink = "https://drive.google.com/uc?export=download&id";
+  const objectId = driveLink.split("/")[5];
+  return downloadLink + "=" + objectId;
+};
+
+// get current section
+export const currentSection = (url) => {
+  return url ? url.replace("#", "") : "Home";
 };

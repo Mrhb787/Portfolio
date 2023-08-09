@@ -8,7 +8,7 @@ const About = () => {
       justifyContent="space-evenly"
       alignItems="center"
       direction="row"
-      className="fadeIn section"
+      className="fadeIn"
     >
       <img src={ProfileImg} alt="Developer" className="about-img" />
       <Stack spacing={2} sx={{maxWidth: "500px"}}>

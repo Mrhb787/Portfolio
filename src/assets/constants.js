@@ -18,12 +18,18 @@ export const NavLinkNames = [
   "Contact",
 ];
 
-// Landing page bg
-export const LandingPageBG = "https://wallpaperaccess.com/full/312629.jpg";
+// Landing page data
+export const LandingPageData = {
+  backgroundImg: "https://wallpaperaccess.com/full/312629.jpg",
+  title: "Hi",
+  subtitle: "It's Abhishek",
+  position: "OTAKU | Backend Engineer",
+  intro: "Experience in building microservices and scalable systems",
+};
 
 // resume
 export const resumeURL =
-  "https://drive.google.com/uc?export=download&id=1HGcazcfIslglcOJSF8ArD9qIEteliqeN";
+  "https://drive.google.com/file/d/1HGcazcfIslglcOJSF8ArD9qIEteliqeN/view?usp=drive_link";
 
 // Github
 export const GITHUB = "mrhb787";
