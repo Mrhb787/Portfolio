@@ -26,13 +26,6 @@ const NavLinkProvider = () => {
   };
 
   useEffect(() => {
-    window.scrollTo(
-      0,
-      window.innerHeight *
-        NavLinkNames.findIndex(
-          (link) => link === currentSection(window.location.hash)
-        )
-    );
     window.addEventListener("scroll", handleScroll, {passive: true});
     return () => {
       window.removeEventListener("scroll", handleScroll);

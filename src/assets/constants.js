@@ -12,8 +12,8 @@ export const NavTitle = {
 export const NavLinkNames = [
   "Home",
   "About",
-  "Education",
   "Experience",
+  "Education",
   "Projects",
   "Contact",
 ];
@@ -64,9 +64,47 @@ export const EducationDetails = [
 export const ExperienceDetails = [
   {
     imgSrc:
+      "https://media.licdn.com/dms/image/C4D0BAQHZzXFOkncpxQ/company-logo_200_200/0/1671923425506?e=1700092800&v=beta&t=KhTxk0Tuugl47M9KhCT_XTwuECyqfCTvKVwvhm0aL6s",
+    company: "JAXL Innovations",
+    position: "SDE-1",
+    employmentType: "Full Time",
+    time: "Jul 2023 - Present",
+    work: [
+      {
+        title: "Ather Bunded Policy Issue",
+        content:
+          "Worked with the auto partnership team to develop the apis for partner ather to issue policies in bundle.",
+      },
+      {
+        title: "MyGate Policy Prequote Link Generator",
+        content: "Wrote python script to generate policy preqoute link",
+      },
+      {
+        title: "Amazon Policy Endorsement",
+        content:
+          "Wrote script with capabilites of logging & debugging to re-endorse wrongly endrosed policies",
+      },
+      {
+        title: "Self Serve Portal",
+        content:
+          "A portal for auto partnership team for partner onboarding and maintainance",
+      },
+    ],
+    skills: [
+      "Backend Development",
+      "Python",
+      "Design Patterns",
+      "Django",
+      "Django Rest Framework",
+      "Rest APIs",
+    ],
+  },
+  {
+    imgSrc:
       "https://play-lh.googleusercontent.com/YyZ4oxWo8gEJoTRk_5U48vtslIEvHYXdKfBZ_gHfHd7H2yFnfcqwS-61CdStiWsmbrI",
     company: "Acko",
-    position: "SDE Intern - Backend",
+    position: "SDE - Backend",
+    employmentType: "Internship",
     time: "Jan - June 2023",
     work: [
       {
@@ -101,7 +139,8 @@ export const ExperienceDetails = [
     imgSrc:
       "https://pbs.twimg.com/profile_images/1412862499800551428/n5QfBlee_400x400.png",
     company: "Digicert",
-    position: "ASE Intern",
+    position: "ASE - FullStack",
+    employmentType: "Internship",
     time: "Sep - Dec 2022",
     work: [
       {
@@ -119,7 +158,8 @@ export const ExperienceDetails = [
     imgSrc:
       "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
     company: "Mathworks",
-    position: "EDG Intern",
+    position: "EDG - Backend",
+    employmentType: "Internship",
     time: "May - July 2022",
     work: [
       {
@@ -216,7 +256,17 @@ export const ContactDetails = [
 
 // Contact
 export const Contact = {
-  email: {primary: "abhishekworks787@gmail.com", others: []},
+  email: {
+    primary: "abhishekworks787@gmail.com",
+  },
+  others: {
+    linkedin: "https://www.linkedin.com/in/abhishekworks787",
+    instagram: "https://www.instagram.com/senpiesengar/",
+    github: "https://github.com/mrhb787",
+    twitter: "",
+    topmate: "topmate.io/abhishekworks787",
+    topmatemessage: "https://topmate.io/abhishekworks787/483210",
+  },
 };
 
 // Hire Mail Data

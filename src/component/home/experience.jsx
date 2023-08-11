@@ -1,21 +1,41 @@
 import {Fragment} from "react";
-import {Stack, Typography, Divider, Chip} from "@mui/material";
+import {Stack, Typography} from "@mui/material";
+import {Divider, Alert, Chip} from "@mui/joy";
 import {ExperienceDetails} from "../../assets/constants";
+import TextAnimated from "../../assets/components/textanimations";
 
-const ExperienceItem = ({imgSrc, company, position, time, work, skills}) => {
+const ExperienceItem = ({
+  imgSrc,
+  company,
+  position,
+  employmentType,
+  time,
+  work,
+  skills,
+}) => {
   return (
-    <Stack direction="row" spacing={3} className="educationItem">
-      <img src={imgSrc} alt={imgSrc} className="item-img" />
+    <Stack spacing={2} className="educationItem reveal">
+      <Stack direction="row" spacing={4} alignItems="center">
+        <img src={imgSrc} alt={imgSrc} className="item-img" />
+        <Typography variant="h4">{company}</Typography>
+      </Stack>
+      <Divider />
       <Stack spacing={1}>
-        <Typography variant="h5">{company}</Typography>
-        <Divider />
         <Stack direction="row" alignItems="center" spacing={3}>
-          <Typography>{position}</Typography>
-          <Typography>{time}</Typography>
+          <Alert variant="soft" size="sm" color="success">
+            {position}
+          </Alert>
+          <Alert variant="soft" size="sm" color="primary">
+            {employmentType}
+          </Alert>
+          <Alert variant="soft" size="sm">
+            {time}
+          </Alert>
         </Stack>
-        <Stack>
+        <Divider />
+        <Stack spacing={1}>
           {work.map((e, i) => (
-            <Typography key={i} variant="caption">
+            <Typography key={i}>
               <strong>{e.title}</strong> : {e.content}
             </Typography>
           ))}
@@ -27,7 +47,9 @@ const ExperienceItem = ({imgSrc, company, position, time, work, skills}) => {
           sx={{maxWidth: "500px"}}
         >
           {skills.map((skill) => (
-            <Chip key={skill} label={skill} size="small" />
+            <Chip key={skill} size="sm" variant="soft">
+              {skill}
+            </Chip>
           ))}
         </Stack>
       </Stack>
@@ -35,28 +57,19 @@ const ExperienceItem = ({imgSrc, company, position, time, work, skills}) => {
   );
 };
 
-const Experience = ({loading}) => {
+const Experience = () => {
   return (
-    <Stack
-      className={loading ? "" : "fadeIn"}
-      sx={{minHeight: "calc(100vh)"}}
-      spacing={1}
-    >
-      <Typography className="title-1" variant="h1">
-        Experience
-      </Typography>
-      <div className="title-1-line"></div>
-      <Stack spacing={2}>
+    <Stack className="section fadeIn" spacing={2} sx={{paddingTop: "64px"}}>
+      <TextAnimated
+        text="Experience"
+        variant="h1"
+        className="reveal"
+        animation="drowning"
+      />
+      <Stack spacing={6} className="experience-items-container">
         {ExperienceDetails.map((e) => (
           <Fragment key={e.company}>
-            <ExperienceItem
-              imgSrc={e.imgSrc}
-              company={e.company}
-              position={e.position}
-              time={e.time}
-              work={e.work}
-              skills={e.skills}
-            />
+            <ExperienceItem {...e} />
           </Fragment>
         ))}
       </Stack>
