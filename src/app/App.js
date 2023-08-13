@@ -1,7 +1,7 @@
 import Router from "../api/routes";
 import "../assets/components/style.css";
 
-import NavBar from "../component/nav/Nav";
+import NavBar from "../components/nav/Nav";
 
 const App = () => {
   return (

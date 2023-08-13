@@ -35,19 +35,14 @@
     background-color: #ffffff;
 }
 
-.contactItem {
-    padding: 15px;
-    width: 300px;
-    background-color: rgba(255, 255, 255);
-    border-radius: 15px;
-    cursor: pointer;
+.education,
+.contact {
+    background-color: #ffffff;
+    padding: 64px 0px;
+    color: #000000;
 }
 
-.contact-link {
-    text-decoration: none !important;
-}
-
-
+/* Animation css */
 .fadeIn {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;

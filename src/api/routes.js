@@ -1,7 +1,7 @@
 import {useRoutes} from "react-router-dom";
 
 // Components
-import Home from "../component/home/home";
+import Home from "../components/home/home";
 const Router = () => {
   const routes = useRoutes([
     {

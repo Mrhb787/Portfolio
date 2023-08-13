@@ -61,124 +61,122 @@ export const EducationDetails = [
 ];
 
 // Experience
-export const ExperienceDetails = [
-  {
-    imgSrc:
-      "https://media.licdn.com/dms/image/C4D0BAQHZzXFOkncpxQ/company-logo_200_200/0/1671923425506?e=1700092800&v=beta&t=KhTxk0Tuugl47M9KhCT_XTwuECyqfCTvKVwvhm0aL6s",
-    company: "JAXL Innovations",
-    position: "SDE-1",
-    employmentType: "Full Time",
-    time: "Jul 2023 - Present",
-    work: [
-      {
-        title: "Ather Bunded Policy Issue",
-        content:
-          "Worked with the auto partnership team to develop the apis for partner ather to issue policies in bundle.",
-      },
-      {
-        title: "MyGate Policy Prequote Link Generator",
-        content: "Wrote python script to generate policy preqoute link",
-      },
-      {
-        title: "Amazon Policy Endorsement",
-        content:
-          "Wrote script with capabilites of logging & debugging to re-endorse wrongly endrosed policies",
-      },
-      {
-        title: "Self Serve Portal",
-        content:
-          "A portal for auto partnership team for partner onboarding and maintainance",
-      },
-    ],
-    skills: [
-      "Backend Development",
-      "Python",
-      "Design Patterns",
-      "Django",
-      "Django Rest Framework",
-      "Rest APIs",
-    ],
+export const ExperienceData = {
+  meta: {
+    totalWorkExprienceInMonths: 13,
+    totalInternshipExperience: 13,
+    totalFullTimeExperience: 0,
+    totalCompaniesWorkedFor: 4,
   },
-  {
-    imgSrc:
-      "https://play-lh.googleusercontent.com/YyZ4oxWo8gEJoTRk_5U48vtslIEvHYXdKfBZ_gHfHd7H2yFnfcqwS-61CdStiWsmbrI",
-    company: "Acko",
-    position: "SDE - Backend",
-    employmentType: "Internship",
-    time: "Jan - June 2023",
-    work: [
-      {
-        title: "Ather Bunded Policy Issue",
-        content:
-          "Worked with the auto partnership team to develop the apis for partner ather to issue policies in bundle.",
-      },
-      {
-        title: "MyGate Policy Prequote Link Generator",
-        content: "Wrote python script to generate policy preqoute link",
-      },
-      {
-        title: "Amazon Policy Endorsement",
-        content:
-          "Wrote script with capabilites of logging & debugging to re-endorse wrongly endrosed policies",
-      },
-      {
-        title: "Self Serve Portal",
-        content:
-          "A portal for auto partnership team for partner onboarding and maintainance",
-      },
-    ],
-    skills: [
-      "Backend Development",
-      "Java",
-      "Design Patterns",
-      "Spring Boot",
-      "Rest APIs",
-    ],
-  },
-  {
-    imgSrc:
-      "https://pbs.twimg.com/profile_images/1412862499800551428/n5QfBlee_400x400.png",
-    company: "Digicert",
-    position: "ASE - FullStack",
-    employmentType: "Internship",
-    time: "Sep - Dec 2022",
-    work: [
-      {
-        title: "QA Basics",
-        content: "Worked with EPKI QA team to learn basics of QA",
-      },
-      {
-        title: "EPKI Certificates Testing",
-        content: "Wrote tests for EPKI manager",
-      },
-    ],
-    skills: ["Javascript", "Regression Testing", "Cypress"],
-  },
-  {
-    imgSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
-    company: "Mathworks",
-    position: "EDG - Backend",
-    employmentType: "Internship",
-    time: "May - July 2022",
-    work: [
-      {
-        title: "MATLAB Basics",
-        content: "Learned Matlab",
-      },
-      {
-        title: "Simulink Basics",
-        content: "Learnt basics of simulink and models",
-      },
-      {
-        title: "Qesimcheck",
-        content:
-          "Developed Qesimcheck tool from scratch by first preparing Product requirement Details, then initialiting development with the team. Internal Tool of Matlab to develop test architecture for various models in simulink with testing and report generation support.",
-      },
-    ],
-    skills: ["Matlab", "Simulink", "Maths"],
-  },
-];
+  ExperienceDetails: [
+    {
+      imgSrc:
+        "https://media.licdn.com/dms/image/C4D0BAQHZzXFOkncpxQ/company-logo_200_200/0/1671923425506?e=1700092800&v=beta&t=KhTxk0Tuugl47M9KhCT_XTwuECyqfCTvKVwvhm0aL6s",
+      company: "JAXL Innovations",
+      position: "SDE-1",
+      employmentType: "Full Time",
+      time: "Jul 2023 - Present",
+      work: [
+        {
+          title: "Razorpay Payments Integration",
+          content:
+            "Integrated the razorpay payment checkout for subscription and one time orders with python integration in Django",
+          timeline: "July 2023 - Present",
+        },
+      ],
+      skills: [
+        "Backend Development",
+        "Python",
+        "Design Patterns",
+        "Django",
+        "Django Rest Framework",
+        "Rest APIs",
+      ],
+    },
+    {
+      imgSrc:
+        "https://play-lh.googleusercontent.com/YyZ4oxWo8gEJoTRk_5U48vtslIEvHYXdKfBZ_gHfHd7H2yFnfcqwS-61CdStiWsmbrI",
+      company: "Acko",
+      position: "SDE - Backend",
+      employmentType: "Internship",
+      time: "Jan - June 2023",
+      work: [
+        {
+          title: "Ather Bunded Policy Issue",
+          content:
+            "Worked with the auto partnership team to develop the apis for partner ather to issue policies in bundle.",
+        },
+        {
+          title: "MyGate Policy Prequote Link Generator",
+          content: "Wrote python script to generate policy preqoute link",
+        },
+        {
+          title: "Amazon Policy Endorsement",
+          content:
+            "Wrote script with capabilites of logging & debugging to re-endorse wrongly endrosed policies",
+        },
+        {
+          title: "Self Serve Portal",
+          content:
+            "A portal for auto partnership team for partner onboarding and maintainance",
+        },
+      ],
+      skills: [
+        "Backend Development",
+        "Java",
+        "Design Patterns",
+        "Spring Boot",
+        "Rest APIs",
+        "Docker",
+        "Maven",
+        "Postman",
+      ],
+    },
+    {
+      imgSrc:
+        "https://pbs.twimg.com/profile_images/1412862499800551428/n5QfBlee_400x400.png",
+      company: "Digicert",
+      position: "ASE - FullStack",
+      employmentType: "Internship",
+      time: "Sep - Dec 2022",
+      work: [
+        {
+          title: "QA Basics",
+          content: "Worked with EPKI QA team to learn basics of QA",
+        },
+        {
+          title: "EPKI Certificates Testing",
+          content: "Wrote tests for EPKI manager",
+        },
+      ],
+      skills: ["Javascript", "Regression Testing", "Cypress"],
+    },
+    {
+      imgSrc:
+        "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
+      company: "Mathworks",
+      position: "EDG - Backend",
+      employmentType: "Internship",
+      time: "May - July 2022",
+      work: [
+        {
+          title: "MATLAB Basics",
+          content: "Learned Matlab",
+        },
+        {
+          title: "Simulink Basics",
+          content: "Learnt basics of simulink and models",
+        },
+        {
+          title: "Qesimcheck",
+          content:
+            "Developed Qesimcheck tool from scratch by first preparing Product requirement Details, then initialiting development with the team. Internal Tool of Matlab to develop test architecture for various models in simulink with testing and report generation support.",
+        },
+      ],
+      skills: ["Matlab", "Simulink", "Maths"],
+    },
+  ],
+};
 
 // Project Details
 export const ProjectDetails = [
@@ -264,7 +262,7 @@ export const Contact = {
     instagram: "https://www.instagram.com/senpiesengar/",
     github: "https://github.com/mrhb787",
     twitter: "",
-    topmate: "topmate.io/abhishekworks787",
+    topmate: "https://topmate.io/abhishekworks787",
     topmatemessage: "https://topmate.io/abhishekworks787/483210",
   },
 };

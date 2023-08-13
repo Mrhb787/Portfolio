@@ -5,7 +5,7 @@ import {Stack, Typography} from "@mui/material";
 import {EducationDetails} from "../../assets/constants";
 const EducationItem = ({imgSrc, title, subject, year, grade}) => {
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" className="reveal">
       <Stack direction="row" spacing={3} className="educationItem">
         <img src={imgSrc} alt={title} className="item-img" />
         <Stack spacing={1}>
@@ -26,24 +26,23 @@ const EducationItem = ({imgSrc, title, subject, year, grade}) => {
 
 const Education = () => {
   return (
-    <Stack className="fadeIn section" spacing={1}>
-      <Stack flexGrow={1} sx={{width: "80%"}}>
-        <Typography variant="h1">Education</Typography>
-        <br />
-
-        <Stack spacing={2}>
-          {EducationDetails.map((education) => (
-            <Fragment key={education.year}>
-              <EducationItem
-                imgSrc={education.imgSrc}
-                title={education.title}
-                subject={education.subject}
-                year={education.year}
-                grade={education.grade}
-              />
-            </Fragment>
-          ))}
-        </Stack>
+    <Stack className="fadeIn section education" spacing={1}>
+      <Typography variant="h1" className="reveal">
+        <b>Education</b>
+      </Typography>
+      <br />
+      <Stack spacing={2}>
+        {EducationDetails.map((education) => (
+          <Fragment key={education.year}>
+            <EducationItem
+              imgSrc={education.imgSrc}
+              title={education.title}
+              subject={education.subject}
+              year={education.year}
+              grade={education.grade}
+            />
+          </Fragment>
+        ))}
       </Stack>
     </Stack>
   );

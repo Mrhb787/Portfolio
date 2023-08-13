@@ -1,8 +1,9 @@
 import {Fragment} from "react";
 import {Stack, Typography} from "@mui/material";
 import {Divider, Alert, Chip} from "@mui/joy";
-import {ExperienceDetails} from "../../assets/constants";
+import {ExperienceData} from "../../assets/constants";
 import TextAnimated from "../../assets/components/textanimations";
+import WorkExperienceTile from "../../assets/components/workexperiencetile";
 
 const ExperienceItem = ({
   imgSrc,
@@ -22,12 +23,14 @@ const ExperienceItem = ({
       <Divider />
       <Stack spacing={1}>
         <Stack direction="row" alignItems="center" spacing={3}>
-          <Alert variant="soft" size="sm" color="success">
+          <Alert variant="solid" size="sm" color="primary">
             {position}
           </Alert>
+          <Divider orientation="vertical" />
           <Alert variant="soft" size="sm" color="primary">
             {employmentType}
           </Alert>
+          <Divider orientation="vertical" />
           <Alert variant="soft" size="sm">
             {time}
           </Alert>
@@ -35,19 +38,24 @@ const ExperienceItem = ({
         <Divider />
         <Stack spacing={1}>
           {work.map((e, i) => (
-            <Typography key={i}>
-              <strong>{e.title}</strong> : {e.content}
-            </Typography>
+            <Fragment key={i}>
+              <WorkExperienceTile
+                title={e.title}
+                content={e.content}
+                timeline={e.timeline}
+              />
+            </Fragment>
           ))}
         </Stack>
-        <Stack
-          spacing={1}
-          direction="row"
-          flexWrap="wrap"
-          sx={{maxWidth: "500px"}}
-        >
+        <Stack direction="row" flexWrap="wrap" sx={{maxWidth: "500px"}}>
           {skills.map((skill) => (
-            <Chip key={skill} size="sm" variant="soft">
+            <Chip
+              key={skill}
+              size="sm"
+              variant="solid"
+              color="success"
+              sx={{marginTop: "8px", marginLeft: "8px"}}
+            >
               {skill}
             </Chip>
           ))}
@@ -59,7 +67,11 @@ const ExperienceItem = ({
 
 const Experience = () => {
   return (
-    <Stack className="section fadeIn" spacing={2} sx={{paddingTop: "64px"}}>
+    <Stack
+      className="section fadeIn"
+      spacing={2}
+      sx={{paddingTop: "96px", paddingBottom: "96px"}}
+    >
       <TextAnimated
         text="Experience"
         variant="h1"
@@ -67,7 +79,7 @@ const Experience = () => {
         animation="drowning"
       />
       <Stack spacing={6} className="experience-items-container">
-        {ExperienceDetails.map((e) => (
+        {ExperienceData.ExperienceDetails.map((e) => (
           <Fragment key={e.company}>
             <ExperienceItem {...e} />
           </Fragment>

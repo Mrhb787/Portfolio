@@ -1,3 +1,5 @@
+import {NavLinkNames} from "./constants";
+
 // Smooth Screen Scroll on Click
 export const scrollOnClick = (element) => {
   element.scrollIntoView({
@@ -8,6 +10,28 @@ export const scrollOnClick = (element) => {
 // get innerWindowWidth
 export const screenWidth = () => {
   return window.innerWidth;
+};
+
+// screen Height
+export const screenHeight = () => {
+  return window.innerHeight;
+};
+
+// get the active section
+export const getActiveSection = () => {
+  const sections = document.querySelectorAll("section");
+  const currentPosition = window.scrollY;
+  var currHeight = 0;
+  for (var s = 0; s < sections.length; s++) {
+    const currentSection = sections[s];
+    const clientHeight = currentSection.clientHeight;
+    if (
+      currentPosition >= currHeight &&
+      currentPosition < currHeight + clientHeight
+    )
+      return s;
+    currHeight = currHeight + clientHeight;
+  }
 };
 
 // create drive link downloadable url
