@@ -4,7 +4,7 @@ import {Divider, Alert, Chip} from "@mui/joy";
 import {ExperienceData} from "../../assets/constants";
 import TextAnimated from "../../assets/components/textanimations";
 import WorkExperienceTile from "../../assets/components/workexperiencetile";
-
+import ExperienceCard from "../../assets/components/experiencecard.jsx";
 const ExperienceItem = ({
   imgSrc,
   company,
@@ -78,12 +78,15 @@ const Experience = () => {
         className="reveal"
         animation="drowning"
       />
-      <Stack spacing={6} className="experience-items-container">
-        {ExperienceData.ExperienceDetails.map((e) => (
-          <Fragment key={e.company}>
-            <ExperienceItem {...e} />
-          </Fragment>
-        ))}
+      <Stack direction="row" spacing={2}>
+        <ExperienceCard />
+        <Stack spacing={6} className="experience-items-container">
+          {ExperienceData.ExperienceDetails.map((e) => (
+            <Fragment key={e.company}>
+              <ExperienceItem {...e} />
+            </Fragment>
+          ))}
+        </Stack>
       </Stack>
     </Stack>
   );

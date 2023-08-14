@@ -19,7 +19,6 @@ const NavLinkProvider = () => {
 
   const handleScroll = () => {
     const activeSection = NavLinkNames[getActiveSection()];
-    console.log(activeSection);
     setActive(activeSection);
   };
 
