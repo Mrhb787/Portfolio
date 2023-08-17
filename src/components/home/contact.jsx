@@ -3,7 +3,7 @@ import {Stack, Divider} from "@mui/joy";
 import ContactCard from "../../assets/components/contactcard";
 import ContactForm from "../../assets/components/contactform";
 
-const Contact = () => {
+const Contact = ({data}) => {
   return (
     <Stack className="fadeIn section contact" spacing={1}>
       <Typography variant="h1" className="reveal">
@@ -14,7 +14,7 @@ const Contact = () => {
         direction="row"
         spacing={2}
       >
-        <ContactCard />
+        <ContactCard data={data} />
         <ContactForm />
       </Stack>
     </Stack>

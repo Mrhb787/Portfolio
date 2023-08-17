@@ -4,22 +4,24 @@ import Button from "@mui/joy/Button";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import WorkIcon from "@mui/icons-material/Work";
 
-import {resumeURL, LandingPageData} from "../../assets/constants";
 import {screenWidth, dispatchDriveDownloadLink} from "../../assets/utils";
 
-const LandingPageLeft = () => {
+const LandingPageLeft = ({title, subtitle, designation, intro, resume}) => {
   return (
     <Stack spacing={1}>
-      <Typography variant="h1">{LandingPageData.title}</Typography>
-      <Typography variant="h2">{LandingPageData.subtitle}</Typography>
-      <Typography variant="h5">{LandingPageData.position}</Typography>
-      <Typography variant="body">{LandingPageData.intro}</Typography>
+      <Typography variant="h1">{title}</Typography>
+      <Typography variant="h2">{subtitle}</Typography>
+      <Typography variant="h5">{designation}</Typography>
+      <Typography variant="body">{intro}</Typography>
       <Stack direction="row" spacing={2}>
         <Button
           className="landing-btn"
           variant="soft"
           color="success"
           endDecorator={<WorkIcon />}
+          onClick={() => {
+            window.open("#contact", "_self");
+          }}
         >
           Hire Me
         </Button>
@@ -29,7 +31,7 @@ const LandingPageLeft = () => {
           color="primary"
           endDecorator={<FileDownloadIcon />}
           onClick={() => {
-            window.open(dispatchDriveDownloadLink(resumeURL), "_blank");
+            window.open(dispatchDriveDownloadLink(resume.url), "_blank");
           }}
         >
           Download CV
@@ -43,7 +45,7 @@ const LandingPageRight = () => {
   return <div style={{width: screenWidth() * 0.4}}></div>;
 };
 
-const LandingPage = () => {
+const LandingPage = ({data, resume}) => {
   return (
     <Stack
       justifyContent="space-evenly"
@@ -51,12 +53,18 @@ const LandingPage = () => {
       direction="row"
       className="fadeIn section"
       sx={{
-        background: `url(${LandingPageData.backgroundImg})`,
+        background: `url(${data.bgImage})`,
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <LandingPageLeft />
+      <LandingPageLeft
+        resume={resume}
+        title={data.title}
+        subtitle={data.subtitle}
+        designation={data.designation}
+        intro={data.intro}
+      />
       <LandingPageRight />
     </Stack>
   );

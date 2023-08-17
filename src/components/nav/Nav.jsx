@@ -1,16 +1,15 @@
 import {AppBar, Toolbar, Typography} from "@mui/material";
-import "../../assets/static/nav.css";
-import {NavTitle} from "../../assets/constants";
 import NavLinks from "./NavLinks";
+import "../../assets/static/nav.css";
 
-const Nav = () => {
+const Nav = ({data}) => {
   return (
     <AppBar position="sticky">
       <Toolbar>
         <div className="nav-head">
-          <Typography className="nav-title">{NavTitle.title}</Typography>
+          <Typography className="nav-title">{data.navTitle}</Typography>
         </div>
-        <NavLinks />
+        <NavLinks data={data.navLinks} />
       </Toolbar>
     </AppBar>
   );

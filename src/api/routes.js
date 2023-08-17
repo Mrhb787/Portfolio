@@ -2,11 +2,11 @@ import {useRoutes} from "react-router-dom";
 
 // Components
 import Home from "../components/home/home";
-const Router = () => {
+const Router = ({data}) => {
   const routes = useRoutes([
     {
       path: "/",
-      element: <Home />,
+      element: <Home data={data} />,
     },
   ]);
   return routes;

@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "name": "Abhishek Singh",
+    "photo": "https://media.licdn.com/dms/image/D4D03AQEkkZFRQADvEg/profile-displayphoto-shrink_200_200/0/1692027649985?e=1697673600&v=beta&t=EUrhhDh8kt7T9T-mrlqW8l8rw3ki80CuKLnj2Nsjq8g",
+    "emails": [
+      {
+        "work": [
+          {
+            "isPrimary": true,
+            "email": "abhishekworks787@gmail.com"
+          }
+        ],
+        "personal": [
+          {
+            "isPrimary": true,
+            "email": "abhisheksengar787@gmail.com"
+          },
+          {
+            "isPrimary": false,
+            "email": "senpieabhishek@gmail.com"
+          }
+        ]
+      }
+    ],
+    "socials": {
+      "required": [
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/in/abhishekworks787",
+          "username": "abhishekworks787"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/mrhb787",
+          "username": "mrhb787"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/senpiesengar/",
+          "username": "senpiesengar"
+        }
+      ],
+      "other": [
+        {
+          "platform": "topmate",
+          "url": "https://topmate.io/abhishekworks787",
+          "username": "abhishekworks787"
+        }
+      ]
+    },
+    "resume": {
+      "url": "https://drive.google.com/file/d/1HGcazcfIslglcOJSF8ArD9qIEteliqeN/view?usp=drive_link",
+      "other": [
+        {
+          "role": "Backend",
+          "url": "https://drive.google.com/file/d/1HGcazcfIslglcOJSF8ArD9qIEteliqeN/view?usp=drive_link"
+        },
+        {
+          "role": "Frontend",
+          "url": ""
+        },
+        {
+          "role": "FullStack",
+          "url": ""
+        }
+      ]
+    },
+    "tag": "Dev"
+  },
+  "components": {
+    "navbar": {
+      "bgColor": "#000000",
+      "navTitle": "Abhishek | Software Engineer",
+      "navLogo": null,
+      "navLinks": [
+        "home",
+        "about",
+        "experience",
+        "education",
+        "projects",
+        "contact"
+      ]
+    },
+    "landingPage": {
+      "bgColor": "#000000",
+      "bgImage": "https://wallpaperaccess.com/full/312629.jpg",
+      "title": "Hi",
+      "subtitle": "It's Abhishek",
+      "designation": "OTAKU | Backend Engineer",
+      "intro": "Experience in building microservices and scalable systems"
+    },
+    "about": {
+      "bgColor": "#ffffff",
+      "bgImage": null,
+      "details": {
+        "college": "Indian Institute Of Information Technology, Lucnkow",
+        "motto": "Descipline defeats Talent!",
+        "hobbies": "I like anime, gym & playing minecraft"
+      }
+    },
+    "experience": {
+      "bgColor": "",
+      "bgImage": "",
+      "details": {
+        "totalExperienceInMonths": "",
+        "totalInternshipExperience": "",
+        "totalFullTimeExperience": "",
+        "totalCompaniesWorkedFor": "",
+        "isStudent": false,
+        "organizations": [
+          {
+            "organizationId": "",
+            "organizationLogo": "",
+            "organizationName": "",
+            "isCurrentOrganization": true,
+            "experience": [
+              {
+                "position": "",
+                "employmentType": "",
+                "timeline": {
+                  "startDate": "",
+                  "endDate": "",
+                  "isCurrent": true
+                },
+                "projects": [
+                  {
+                    "title": "",
+                    "details": ""
+                  }
+                ],
+                "skills": []
+              }
+            ]
+          }
+        ],
+        "technologies": [
+          {
+            "logo": "",
+            "name": "C",
+            "ratingOutOf100": 91
+          },
+          {
+            "logo": "",
+            "name": "C++",
+            "ratingOutOf100": 95
+          },
+          {
+            "logo": "",
+            "name": "Java",
+            "ratingOutOf100": 75
+          },
+          {
+            "logo": "",
+            "name": "Python",
+            "ratingOutOf100": 65
+          }
+        ]
+      }
+    },
+    "education": {
+      "graduation": {
+        "instituteName": "Indian Institute Of Information Technology, Lucknow",
+        "instituteLogo": "https://iiitl.ac.in/wp-content/uploads/2019/10/Final_Logo_IIITL.png",
+        "degree": "Bachelor's Of Technology",
+        "major": "Information Technology",
+        "grade": "8.61",
+        "startYear": "2019",
+        "endYear": "2023"
+      },
+      "highSchool": {
+        "schoolName": "Army Public School Cantt. Kanpur",
+        "schoolLogo": "https://apskanpur.com/images/Website/MainPage/APSKanpurLogo.png",
+        "schoolBoard": "CBSE",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Mathematics",
+          "Informatic Practices",
+          "English"
+        ],
+        "class": "12",
+        "startYear": "2017",
+        "endYear": "2018",
+        "grade": "93 %"
+      },
+      "juniorHighSchool": {
+        "schoolName": "Army Public School Cantt. Kanpur",
+        "schoolLogo": "https://apskanpur.com/images/Website/MainPage/APSKanpurLogo.png",
+        "schoolBoard": "CBSE",
+        "subjects": [
+          "Science",
+          "Maths",
+          "Histroy",
+          "Economics",
+          "Geography",
+          "English",
+          "Hindi"
+        ],
+        "class": "10",
+        "startYear": "2015",
+        "endYear": "2016",
+        "grade": "10 CGPA"
+      },
+
+      "other": [
+        {
+          "id": "1",
+          "instituteName": "Insead MBA",
+          "instituteLogo": "https://www.insead.edu/profiles/custom/insead/themes/insead_core/images/logo-full.png",
+          "degree": "MBA",
+          "major": "Product Management",
+          "grade": "8.09 GPA",
+          "startYear": "2030",
+          "endYear": "2032"
+        }
+      ]
+    },
+    "projects": {
+      "totalProjects": "",
+      "minorProjects": [
+        {
+          "projectTitle": "",
+          "projectUrl": "",
+          "details": ""
+        }
+      ],
+      "majorProjects": [
+        {
+          "projectTitle": "",
+          "projectUrl": "",
+          "isHosted": false,
+          "hostedUrl": "",
+          "details": "",
+          "startDate": "",
+          "endDate": ""
+        }
+      ]
+    }
+  }
+}

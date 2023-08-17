@@ -2,7 +2,7 @@ import {Stack, Typography} from "@mui/material";
 import Hyperlink from "../../assets/components/hyperlink";
 import ContactCard from "../../assets/components/contactcard";
 
-const About = () => {
+const About = ({data, meta}) => {
   return (
     <Stack
       justifyContent="space-evenly"
@@ -10,7 +10,7 @@ const About = () => {
       direction="row"
       className="fadeIn section about"
     >
-      <ContactCard />
+      <ContactCard data={meta} />
       <Stack spacing={2} sx={{maxWidth: "500px"}}>
         <Stack direction="row" spacing={2} alignItems="center">
           <Typography variant="h1" className="reveal">
@@ -18,19 +18,15 @@ const About = () => {
           </Typography>
         </Stack>
         <Typography variant="body1" className="reveal">
-          Hi, I am Abhishek. A Software Engineer graduated from
-          <Hyperlink
-            url="https://iiitl.ac.in"
-            text=" Indian Institue
-          of Information Technology, Lucknow."
-          />
+          Hi, I am Abhishek. A Software Engineer graduated from{" "}
+          <Hyperlink url="https://iiitl.ac.in" text={data.details.college} />
         </Typography>
         <Typography variant="h6" className="reveal">
-          Descipline defeats Talent!
+          {data.details.motto}
         </Typography>
         <Typography className="reveal">
-          Would be glad to work with you. I like anime, gym & playing minecraft.
-          Find more about my hobbies <Hyperlink text="here" url="" />
+          Would be glad to work with you. {data.details.hobbies}. Find more
+          about my hobbies <Hyperlink text="here" url="" />
         </Typography>
       </Stack>
     </Stack>

@@ -1,6 +1,5 @@
 import {useState, useEffect, Fragment} from "react";
 import {Stack} from "@mui/material";
-import {NavLinkNames} from "../../assets/constants";
 import {currentSection, getActiveSection} from "../../assets/utils";
 
 const NavLink = ({name, active = false, setActive}) => {
@@ -13,12 +12,12 @@ const NavLink = ({name, active = false, setActive}) => {
   );
 };
 
-const NavLinkProvider = () => {
+const NavLinkProvider = ({data}) => {
   // states
   const [active, setActive] = useState(currentSection(window.location.hash));
 
   const handleScroll = () => {
-    const activeSection = NavLinkNames[getActiveSection()];
+    const activeSection = data[getActiveSection()];
     setActive(activeSection);
   };
 
@@ -31,7 +30,7 @@ const NavLinkProvider = () => {
 
   return (
     <Stack direction="row" spacing={2}>
-      {NavLinkNames.map((link) => {
+      {data.map((link) => {
         return (
           <Fragment key={link}>
             <NavLink
