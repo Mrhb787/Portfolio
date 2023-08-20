@@ -19,7 +19,7 @@ const Home = ({data}) => {
       resume={data.meta.resume}
     />,
     <About data={data.components.about} meta={data.meta} />,
-    <Experience />,
+    <Experience data={data.components.experience} />,
     <Education data={data.components.education} />,
     <Projects />,
     <Contact data={data.meta} />,

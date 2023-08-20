@@ -64,3 +64,8 @@ export const reveal = () => {
 export const openUrl = (url) => {
   window.open(url, "_blank");
 };
+
+// get years from months
+export const getYearsFromMonths = (months) => {
+  return parseInt(months / 12);
+};

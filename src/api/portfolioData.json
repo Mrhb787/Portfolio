@@ -102,57 +102,251 @@
       "bgColor": "",
       "bgImage": "",
       "details": {
-        "totalExperienceInMonths": "",
-        "totalInternshipExperience": "",
-        "totalFullTimeExperience": "",
-        "totalCompaniesWorkedFor": "",
+        "totalExperienceInMonths": 27,
+        "totalInternshipExperience": 13,
+        "totalFullTimeExperience": 14,
+        "totalCompaniesWorkedFor": 5,
         "isStudent": false,
         "organizations": [
           {
-            "organizationId": "",
-            "organizationLogo": "",
-            "organizationName": "",
+            "organizationId": 1,
+            "organizationLogo": "https://media.licdn.com/dms/image/C4D0BAQHZzXFOkncpxQ/company-logo_200_200/0/1671923425506?e=1700092800&v=beta&t=KhTxk0Tuugl47M9KhCT_XTwuECyqfCTvKVwvhm0aL6s",
+            "organizationName": "JAXL Innovations",
             "isCurrentOrganization": true,
             "experience": [
               {
-                "position": "",
-                "employmentType": "",
+                "id": 1,
+                "position": "SDE - 1",
+                "employmentType": "Full Time",
                 "timeline": {
-                  "startDate": "",
-                  "endDate": "",
+                  "startDate": "July, 2023",
+                  "endDate": null,
                   "isCurrent": true
                 },
                 "projects": [
                   {
-                    "title": "",
-                    "details": ""
+                    "title": "Razorpay Integration",
+                    "details": "Worked as backend Engineer to integrate the razorpay payments python integration with abitlity to create subscriptions, checkout order, webhooks integrations and payment failure rate detection, wrote unit tests to test end to end payments for razorpay with mocking"
                   }
                 ],
-                "skills": []
+                "skills": [
+                  "Python",
+                  "Django",
+                  "Django Rest Framework",
+                  "OpenAPI"
+                ]
+              }
+            ]
+          },
+          {
+            "organizationId": 2,
+            "organizationLogo": "https://bookshlf.in/images/smallLogo.svg",
+            "organizationName": "Bookshlf | ARA Technologies",
+            "isCurrentOrganization": false,
+            "experience": [
+              {
+                "id": 1,
+                "position": "Founding Engineer",
+                "employmentType": "Full Time",
+                "timeline": {
+                  "startDate": "Jan, 2022",
+                  "endDate": "May, 2022",
+                  "isCurrent": false
+                },
+                "projects": [
+                  {
+                    "title": "UI/UX",
+                    "details": "Worked with the Product Manager and UI/UX team to make user book purchase journey, book approve journey, admin panel, statistics etc."
+                  },
+                  {
+                    "title": "Bookshlf Packages",
+                    "details": "Built various packages in react and javascript for bookshlf"
+                  },
+                  {
+                    "title": "Bookshlf APIs",
+                    "details": "Worked with backend team to geneate apis schema with versioning"
+                  }
+                ],
+                "skills": ["Product", "Figma", "Javascript", "RestAPIs"]
+              },
+              {
+                "id": 2,
+                "position": "Frontend Lead",
+                "employmentType": "Full Time",
+                "timeline": {
+                  "startDate": "July, 2022",
+                  "endDate": "Jan, 2023",
+                  "isCurrent": false
+                },
+                "projects": [
+                  {
+                    "title": "Components Designing and Website Build",
+                    "details": "Lead Frontend team to design the reusable and customizable components in react for bookshlf website."
+                  },
+                  {
+                    "title": "Automated Book Verification with ML Integration",
+                    "details": "Worked with backend team to integrate the bookshlf's automated book detection and verification module to automatically verify & approve books from admin panel in one click"
+                  },
+                  {
+                    "title": "Continous Integration and Deployment",
+                    "details": "Wrote unit testcases and added automated deployment for website with workflow success"
+                  }
+                ],
+                "skills": [
+                  "ReactJs",
+                  "Github",
+                  "Javascript",
+                  "RestAPIs",
+                  "NodeJs"
+                ]
+              }
+            ]
+          },
+          {
+            "organizationId": 3,
+            "organizationLogo": "https://play-lh.googleusercontent.com/YyZ4oxWo8gEJoTRk_5U48vtslIEvHYXdKfBZ_gHfHd7H2yFnfcqwS-61CdStiWsmbrI",
+            "organizationName": "Acko",
+            "isCurrentOrganization": false,
+            "experience": [
+              {
+                "id": 1,
+                "position": "SDE - Backend",
+                "employmentType": "Internship",
+                "timeline": {
+                  "startDate": "Jan, 2023",
+                  "endDate": "July, 2023",
+                  "isCurrent": false
+                },
+                "projects": [
+                  {
+                    "title": "Ather Bunded Policy Issue",
+                    "details": "Worked with the auto partnership team to develop the policy endorsement apis in bulk. Created Get and Post APIs for the Ather with get api to issue policies in bulk and post api to endorse policies in bulk, added load balancer, database state management and caching. Created logic to issue policies for next 21 years with unique 8 digit numbers."
+                  },
+                  {
+                    "title": "MyGate Policy Prequote Link Generator",
+                    "details": "Onboarded Mygate Partner and wrote python script to generate policy preqoute link from the bulk csv data recieved from MyGate"
+                  },
+                  {
+                    "title": "Amazon Policy Endorsement",
+                    "details": "Wrote script with capabilites of logging & debugging to re-endorse wrongly endrosed policies"
+                  },
+                  {
+                    "title": "Self Serve Portal",
+                    "details": "A portal for auto partnership team for new partners onboarding and maintainance"
+                  }
+                ],
+                "skills": [
+                  "Backend Development",
+                  "Java",
+                  "Design Patterns",
+                  "Spring Boot",
+                  "Rest APIs",
+                  "Docker",
+                  "Maven",
+                  "Postman"
+                ]
+              }
+            ]
+          },
+          {
+            "organizationId": 4,
+            "organizationLogo": "https://pbs.twimg.com/profile_images/1412862499800551428/n5QfBlee_400x400.png",
+            "organizationName": "Digicert",
+            "isCurrentOrganization": false,
+            "experience": [
+              {
+                "id": 1,
+                "position": "Assosiate Software Engineer",
+                "employmentType": "Internship",
+                "timeline": {
+                  "startDate": "Sep, 2022",
+                  "endDate": "Dec, 2022",
+                  "isCurrent": false
+                },
+                "projects": [
+                  {
+                    "title": "QA Basics",
+                    "details": "Worked with EPKI QA team to learn basics of Quality Assurance with Cypress"
+                  },
+                  {
+                    "title": "EPKI Certificates Testing",
+                    "details": "Worked with EPKI team to develop new various tests with cypress to cover certificate issue verification to partners."
+                  }
+                ],
+                "skills": ["Javascript", "Regression Testing", "Cypress"]
+              }
+            ]
+          },
+          {
+            "organizationId": 5,
+            "organizationLogo": "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
+            "organizationName": "Mathworks",
+            "isCurrentOrganization": false,
+            "experience": [
+              {
+                "id": 1,
+                "position": "Engineering Development Group",
+                "employmentType": "Research Internship",
+                "timeline": {
+                  "startDate": "May, 2022",
+                  "endDate": "July, 2022",
+                  "isCurrent": false
+                },
+                "projects": [
+                  {
+                    "title": "Obstacle Avoidance Algorithm",
+                    "details": "Worked with Core Team in analyzing and optimizing the Obstacle Avoidance Algorithm for Collective Movement in Nano-robots (eg : spider). solved various trigonometric equations to reach better approximation results"
+                  },
+                  {
+                    "title": "Qesimcheck ",
+                    "details": "It is an internal tool developed by Mathworks to develop a test case framework. Worked on writing different simulations for qesimcheck."
+                  }
+                ],
+                "skills": ["Matlab", "Simulink", "Mathematics"]
               }
             ]
           }
         ],
         "technologies": [
           {
-            "logo": "",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png?20201023095457",
             "name": "C",
             "ratingOutOf100": 91
           },
           {
-            "logo": "",
+            "logo": "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
             "name": "C++",
             "ratingOutOf100": 95
           },
           {
-            "logo": "",
+            "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968282.png",
             "name": "Java",
             "ratingOutOf100": 75
           },
           {
-            "logo": "",
+            "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
             "name": "Python",
             "ratingOutOf100": 65
+          },
+          {
+            "logo": "https://cdn-icons-png.flaticon.com/512/1126/1126012.png",
+            "name": "React",
+            "ratingOutOf100": 80
+          },
+          {
+            "logo": "https://static.javatpoint.com/springboot/images/spring-boot-tutorial.jpg",
+            "name": "SpringBoot",
+            "ratingOutOf100": 65
+          },
+          {
+            "logo": "https://w7.pngwing.com/pngs/159/366/png-transparent-django-python-computer-icons-logo-python-text-label-rectangle-thumbnail.png",
+            "name": "Django",
+            "ratingOutOf100": 55
+          },
+          {
+            "logo": "https://cdn-icons-png.flaticon.com/512/1493/1493169.png",
+            "name": "REST APIs",
+            "ratingOutOf100": 75
           }
         ]
       }

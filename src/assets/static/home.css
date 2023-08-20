@@ -17,13 +17,36 @@
     margin-right: 100px;
 }
 
+.experience-item {
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 15px 24px;
+    position: relative;
+}
+
+.experience-org {
+    position: absolute;
+    width: fit-content;
+    top: 10px;
+    right: 10px;
+}
+
+.experience-item-img {
+    border-radius: 12px;
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+    background-color: #ffffff;
+}
+
 .experience-details {
     width: 300px;
 }
 
 .experience-details-title {
     color: #ffffff;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .total-experience-card,
@@ -43,13 +66,15 @@
 }
 
 .experience-year-label {
-    font-size: 12px;
+    font-size: 10px;
     color: #ffffff;
     margin-top: -5px;
 }
 
+
 .technology-experience-tile {
     width: 60px;
+    height: 60px;
     align-items: center;
     border: 1px solid #ffffff;
     padding: 5px 10px;
@@ -69,7 +94,6 @@
 .educationItem {
     border: 1px solid #ffffff;
     border-radius: 12px;
-    padding: 5px 10px;
     cursor: pointer;
     padding: 15px;
 }
@@ -85,6 +109,10 @@
     background-color: #ffffff;
     padding: 64px 0px;
     color: #000000;
+}
+
+.steps-label {
+    color: #ffffff !important;
 }
 
 /* Animation css */

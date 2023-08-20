@@ -1,71 +1,54 @@
 import {Fragment} from "react";
 import {Stack, Typography} from "@mui/material";
-import {Divider, Alert, Chip} from "@mui/joy";
-import {ExperienceData} from "../../assets/constants";
+import {Divider, Chip} from "@mui/joy";
 import TextAnimated from "../../assets/components/textanimations";
 import WorkExperienceTile from "../../assets/components/workexperiencetile";
 import ExperienceCard from "../../assets/components/experiencecard.jsx";
-const ExperienceItem = ({
-  imgSrc,
-  company,
-  position,
-  employmentType,
-  time,
-  work,
-  skills,
-}) => {
+import Steps from "../../assets/components/steps";
+const ExperienceItem = (props) => {
+  const {
+    organizationLogo,
+    organizationName,
+    isCurrentOrganization,
+    experience,
+  } = props;
   return (
-    <Stack spacing={2} className="educationItem reveal">
+    <Stack spacing={2} className="experience-item reveal">
+      {isCurrentOrganization && (
+        <div className="experience-org">
+          <Chip color="success">Currently Working</Chip>
+        </div>
+      )}
+      {!isCurrentOrganization && (
+        <div className="experience-org">
+          <Chip color="primary" variant="solid">
+            Worked
+          </Chip>
+        </div>
+      )}
       <Stack direction="row" spacing={4} alignItems="center">
-        <img src={imgSrc} alt={imgSrc} className="item-img" />
-        <Typography variant="h4">{company}</Typography>
+        <img
+          src={organizationLogo}
+          alt={organizationName}
+          className="experience-item-img"
+        />
+        <Typography variant="h4">{organizationName}</Typography>
       </Stack>
       <Divider />
-      <Stack spacing={1}>
-        <Stack direction="row" alignItems="center" spacing={3}>
-          <Alert variant="solid" size="sm" color="primary">
-            {position}
-          </Alert>
-          <Divider orientation="vertical" />
-          <Alert variant="soft" size="sm" color="primary">
-            {employmentType}
-          </Alert>
-          <Divider orientation="vertical" />
-          <Alert variant="soft" size="sm">
-            {time}
-          </Alert>
-        </Stack>
-        <Divider />
-        <Stack spacing={1}>
-          {work.map((e, i) => (
-            <Fragment key={i}>
-              <WorkExperienceTile
-                title={e.title}
-                content={e.content}
-                timeline={e.timeline}
-              />
+      <Steps>
+        {experience
+          .sort((a, b) => b.id - a.id)
+          .map((exp, index) => (
+            <Fragment key={index}>
+              <WorkExperienceTile data={exp} />
             </Fragment>
           ))}
-        </Stack>
-        <Stack direction="row" flexWrap="wrap" sx={{maxWidth: "500px"}}>
-          {skills.map((skill) => (
-            <Chip
-              key={skill}
-              size="sm"
-              variant="solid"
-              color="success"
-              sx={{marginTop: "8px", marginLeft: "8px"}}
-            >
-              {skill}
-            </Chip>
-          ))}
-        </Stack>
-      </Stack>
+      </Steps>
     </Stack>
   );
 };
 
-const Experience = () => {
+const Experience = ({data}) => {
   return (
     <Stack
       className="section fadeIn"
@@ -79,13 +62,14 @@ const Experience = () => {
         animation="drowning"
       />
       <Stack direction="row" spacing={2}>
-        <ExperienceCard />
+        <ExperienceCard data={data.details} />
         <Stack spacing={6} className="experience-items-container">
-          {ExperienceData.ExperienceDetails.map((e) => (
-            <Fragment key={e.company}>
-              <ExperienceItem {...e} />
-            </Fragment>
-          ))}
+          {data.details &&
+            data.details.organizations.map((organization) => (
+              <Fragment key={organization.organizationId}>
+                <ExperienceItem {...organization} />
+              </Fragment>
+            ))}
         </Stack>
       </Stack>
     </Stack>
