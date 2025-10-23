@@ -1,155 +1,156 @@
 .landing-btn {
-    width: 200px;
-    border-color: red;
-    text-transform: capitalize !important;
+  width: 200px;
+  border-color: red;
+  text-transform: capitalize !important;
 }
 
 .about {
-    background-color: #ffffff;
-    color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .about-img {
-    height: 300px;
-    width: auto;
-    border-radius: 5px;
-    object-fit: cover;
-    margin-right: 100px;
+  height: 300px;
+  width: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 100px;
 }
 
 .experience-item {
-    border: 1px solid #ffffff;
-    border-radius: 12px;
-    cursor: pointer;
-    padding: 15px 24px;
-    position: relative;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 15px 24px;
+  position: relative;
 }
 
 .experience-org {
-    position: absolute;
-    width: fit-content;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  width: fit-content;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .experience-item-img {
-    border-radius: 12px;
-    padding: 5px;
-    height: 80px;
-    width: 80px;
-    background-color: #ffffff;
+  border-radius: 12px;
+  padding: 5px;
+  height: 80px;
+  width: 80px;
+  background-color: #ffffff;
 }
 
 .experience-details {
-    width: 300px;
+  width: 300px;
 }
 
 .experience-details-title {
-    color: #ffffff;
-    font-size: 24px;
+  color: #ffffff;
+  font-size: 24px;
 }
 
 .total-experience-card,
 .technology-experience-card {
-    border: 1px solid white;
-    border-radius: 12px;
-    padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 10px 15px;
 }
 
 .experience-items-container {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .experience-year {
-    font-size: 32px;
-    color: #ffffff;
+  font-size: 32px;
+  color: #ffffff;
 }
 
 .experience-year-label {
-    font-size: 10px;
-    color: #ffffff;
-    margin-top: -5px;
+  font-size: 11px;
+  color: #ffffff;
+  margin-top: -5px;
 }
 
-
 .technology-experience-tile {
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    border: 1px solid #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 .technology-experience-tile div {
-    width: 100%;
+  width: 100%;
 }
 
 .technology-experience-logo img {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .educationItem {
-    border: 1px solid #ffffff;
-    border-radius: 12px;
-    cursor: pointer;
-    padding: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 15px;
 }
 
 .item-img {
-    border-radius: 12px;
-    height: 80px;
-    background-color: #ffffff;
+  border-radius: 12px;
+  height: 80px;
+  background-color: #ffffff;
 }
 
 .education,
 .contact {
-    background-color: #ffffff;
-    padding: 64px 0px;
-    color: #000000;
+  background-color: #ffffff;
+  padding: 64px 0px;
+  color: #000000;
 }
 
 .steps-label {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* Animation css */
 .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    animation-duration: 3s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 3s;
 }
 
 .reveal {
-    position: relative;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 1s all ease;
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
 .reveal.active {
-    transform: translateY(0);
-    opacity: 1;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }

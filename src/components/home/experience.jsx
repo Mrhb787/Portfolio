@@ -1,17 +1,19 @@
-import {Fragment} from "react";
-import {Stack, Typography} from "@mui/material";
-import {Divider, Chip} from "@mui/joy";
-import TextAnimated from "../../assets/components/textanimations";
-import WorkExperienceTile from "../../assets/components/workexperiencetile";
-import ExperienceCard from "../../assets/components/experiencecard.jsx";
-import Steps from "../../assets/components/steps";
+import { Fragment } from 'react';
+import { Stack, Typography } from '@mui/material';
+import { Divider, Chip } from '@mui/joy';
+import TextAnimated from '../../assets/components/textanimations';
+import WorkExperienceTile from '../../assets/components/workexperiencetile';
+import ExperienceCard from '../../assets/components/experiencecard.jsx';
+import Steps from '../../assets/components/steps';
 const ExperienceItem = (props) => {
   const {
     organizationLogo,
     organizationName,
     isCurrentOrganization,
     experience,
+    isInternship,
   } = props;
+
   return (
     <Stack spacing={2} className="experience-item reveal">
       {isCurrentOrganization && (
@@ -24,6 +26,11 @@ const ExperienceItem = (props) => {
           <Chip color="primary" variant="solid">
             Worked
           </Chip>
+          {isInternship && (
+            <Chip color="warning" variant="outlined">
+              Internship
+            </Chip>
+          )}
         </div>
       )}
       <Stack direction="row" spacing={4} alignItems="center">
@@ -48,12 +55,12 @@ const ExperienceItem = (props) => {
   );
 };
 
-const Experience = ({data}) => {
+const Experience = ({ data }) => {
   return (
     <Stack
       className="section fadeIn"
       spacing={2}
-      sx={{paddingTop: "96px", paddingBottom: "96px"}}
+      sx={{ paddingTop: '96px', paddingBottom: '96px' }}
     >
       <TextAnimated
         text="Experience"

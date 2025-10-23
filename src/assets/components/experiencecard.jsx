@@ -10,16 +10,16 @@ const TotalExperienceCard = ({data}) => {
       alignItems="center"
       className="total-experience-card reveal"
     >
-      <div className="experience-details-title reveal">Total Experince</div>
-      <Divider className="reveal" />
-      <Stack
+      {/* <div className="experience-details-title reveal">Total Experince</div>
+      <Divider className="reveal" /> */}
+      {/* <Stack
         direction="row"
         spacing={2}
         divider={<Divider orientation="vertical" className="reveal" />}
         className="reveal"
       >
         <CircularProgress
-          sx={{"--CircularProgress-size": "100px"}}
+          sx={{"--CircularProgress-size": "60px"}}
           determinate
           value={10}
           color="success"
@@ -32,7 +32,7 @@ const TotalExperienceCard = ({data}) => {
           </Stack>
         </CircularProgress>
         <CircularProgress
-          sx={{"--CircularProgress-size": "100px"}}
+          sx={{"--CircularProgress-size": "60px"}}
           determinate
           value={18}
           color="primary"
@@ -46,9 +46,9 @@ const TotalExperienceCard = ({data}) => {
           </Stack>
         </CircularProgress>
       </Stack>
-      <Divider className="reveal" />
-      <CircularProgress
-        sx={{"--CircularProgress-size": "90px"}}
+      <Divider className="reveal" /> */}
+      {/* <CircularProgress
+        sx={{"--CircularProgress-size": "50px"}}
         determinate
         value={10}
         color="success"
@@ -57,7 +57,7 @@ const TotalExperienceCard = ({data}) => {
           <div className="experience-year">{data?.totalCompaniesWorkedFor}</div>
           <div className="experience-year-label">Companies</div>
         </Stack>
-      </CircularProgress>
+      </CircularProgress> */}
 
       <div className="experience-details-title reveal">Full Time Experince</div>
       <Divider className="reveal" />
@@ -68,7 +68,7 @@ const TotalExperienceCard = ({data}) => {
         className="reveal"
       >
         <CircularProgress
-          sx={{"--CircularProgress-size": "80px"}}
+          sx={{"--CircularProgress-size": "100px"}}
           determinate
           value={10}
           color="success"
@@ -81,7 +81,7 @@ const TotalExperienceCard = ({data}) => {
           </Stack>
         </CircularProgress>
         <CircularProgress
-          sx={{"--CircularProgress-size": "80px"}}
+          sx={{"--CircularProgress-size": "100px"}}
           determinate
           value={18}
           color="primary"
@@ -95,7 +95,7 @@ const TotalExperienceCard = ({data}) => {
           </Stack>
         </CircularProgress>
       </Stack>
-      <div className="experience-details-title reveal">
+      {/* <div className="experience-details-title reveal">
         Internships Experince
       </div>
       <Divider className="reveal" />
@@ -132,7 +132,7 @@ const TotalExperienceCard = ({data}) => {
             <div className="experience-year-label">Months</div>
           </Stack>
         </CircularProgress>
-      </Stack>
+      </Stack> */}
     </Stack>
   );
 };

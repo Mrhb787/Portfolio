@@ -25,8 +25,7 @@ const About = ({data, meta}) => {
           {data.details.motto}
         </Typography>
         <Typography className="reveal">
-          Would be glad to work with you. {data.details.hobbies}. Find more
-          about my hobbies <Hyperlink text="here" url="" />
+          Would be glad to work with you. {data.details.hobbies}.
         </Typography>
       </Stack>
     </Stack>

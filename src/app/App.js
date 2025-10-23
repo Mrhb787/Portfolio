@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="App">
       <NavBar data={data.components.navbar} />
-      {process.env.REACT_APP_NODE_ENV !== "DEVELOPMENT" && <UnderDev />}
+      {process.env.REACT_APP_NODE_ENV === "DEVELOPMENT" && <UnderDev />}
       <Router data={data} />
     </div>
   );

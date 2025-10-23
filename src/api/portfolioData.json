@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Abhishek Singh",
-    "photo": "https://media.licdn.com/dms/image/D4D03AQEkkZFRQADvEg/profile-displayphoto-shrink_200_200/0/1692027649985?e=1697673600&v=beta&t=EUrhhDh8kt7T9T-mrlqW8l8rw3ki80CuKLnj2Nsjq8g",
+    "photo": "local",
     "emails": [
       {
         "work": [
@@ -10,16 +10,7 @@
             "email": "abhishekworks787@gmail.com"
           }
         ],
-        "personal": [
-          {
-            "isPrimary": true,
-            "email": "abhisheksengar787@gmail.com"
-          },
-          {
-            "isPrimary": false,
-            "email": "senpieabhishek@gmail.com"
-          }
-        ]
+        "personal": []
       }
     ],
     "socials": {
@@ -49,11 +40,11 @@
       ]
     },
     "resume": {
-      "url": "https://drive.google.com/file/d/1HGcazcfIslglcOJSF8ArD9qIEteliqeN/view?usp=drive_link",
+      "url": "https://drive.google.com/file/d/1DSXDJOrwAjXxi1LhNWEmGyQXdnKQejP1/view?usp=drive_link",
       "other": [
         {
           "role": "Backend",
-          "url": "https://drive.google.com/file/d/1HGcazcfIslglcOJSF8ArD9qIEteliqeN/view?usp=drive_link"
+          "url": "https://drive.google.com/file/d/1DSXDJOrwAjXxi1LhNWEmGyQXdnKQejP1/view?usp=drive_link"
         },
         {
           "role": "Frontend",
@@ -93,7 +84,7 @@
       "bgColor": "#ffffff",
       "bgImage": null,
       "details": {
-        "college": "Indian Institute Of Information Technology, Lucnkow",
+        "college": "Indian Institute Of Information Technology, Lucknow",
         "motto": "Descipline defeats Talent!",
         "hobbies": "I like anime, gym & playing minecraft"
       }
@@ -102,16 +93,16 @@
       "bgColor": "",
       "bgImage": "",
       "details": {
-        "totalExperienceInMonths": 27,
+        "totalExperienceInMonths": 36,
         "totalInternshipExperience": 13,
-        "totalFullTimeExperience": 14,
+        "totalFullTimeExperience": 23,
         "totalCompaniesWorkedFor": 5,
         "isStudent": false,
         "organizations": [
           {
             "organizationId": 1,
-            "organizationLogo": "https://media.licdn.com/dms/image/C4D0BAQHZzXFOkncpxQ/company-logo_200_200/0/1671923425506?e=1700092800&v=beta&t=KhTxk0Tuugl47M9KhCT_XTwuECyqfCTvKVwvhm0aL6s",
-            "organizationName": "JAXL Innovations",
+            "organizationLogo": "https://play-lh.googleusercontent.com/Zqv3j3gWCWrxuHW1VkRKNWso3beRsrwPCj58kG_Ile6iGGSf1YfkPYhKExXKY7_L0lU",
+            "organizationName": "Zomato Lmt.",
             "isCurrentOrganization": true,
             "experience": [
               {
@@ -119,28 +110,54 @@
                 "position": "SDE - 1",
                 "employmentType": "Full Time",
                 "timeline": {
-                  "startDate": "July, 2023",
+                  "startDate": "May, 2024",
                   "endDate": null,
                   "isCurrent": true
                 },
                 "projects": [
                   {
-                    "title": "Razorpay Integration",
-                    "details": "Worked as backend Engineer to integrate the razorpay payments python integration with abitlity to create subscriptions, checkout order, webhooks integrations and payment failure rate detection, wrote unit tests to test end to end payments for razorpay with mocking"
+                    "title": "SplitCart Orders Controller",
+                    "details": "Designed and built a modern, interface-based controller (SplitCartOrdersController) to replace the monolithic GetSplitCartOrders. This controller modularized the logic into discrete, testable operations with clearly defined responsibilities. It also allowed improved observability, better async handling, and extensibility for future use cases."
+                  },
+                  {
+                    "title": "Hyperpure Homepage Single Api",
+                    "details": "Designed and built a modern, interface-based api controller to fetch all homepage data in a single api call for Hyperpure. This replaced multiple dependent calls with a single call, improving performance and reducing latency. The new controller utilized modular operations for better maintainability and scalability."
+                  },
+                  {
+                    "title": "Custom Quantity Based Pricing",
+                    "details": "Developed a Kafka-driven ETL system to override product pricing based on custom quantity rules. Impact: Automated pricing updates by eliminating manual overrides via the admin dashboard, saving time and reducing human errors for ops and dev teams."
+                  },
+                  {
+                    "title": "Petpooja Integration",
+                    "details": "Launched a new flow for onboarding and ordering from PetPooja, enhancing adoption and transaction rates. Impact: Daily average orders grew from 14 to 61; GMV increased from 83,981.00 to396,285.00 (≈3.5x growth)."
+                  },
+                  {
+                    "title": "Hyperpure Express Web Integration",
+                    "details": "Integrated Express ordering on the Hyperpure website to enable faster deliveries. Impact: Average daily GMV of 671,285.04 with 77-101 daily orders from web (and growing rapidly)"
+                  },
+                  {
+                    "title": "Order Delivery Flow Enhancements",
+                    "details": "Launched a new order-delivery flow handling consumer and delivery agent actions in real time, reducing return tickets by 8.1% and saving 80K in refunds (and improving)."
                   }
                 ],
                 "skills": [
+                  "Go",
+                  "GRpc",
                   "Python",
-                  "Django",
-                  "Django Rest Framework",
-                  "OpenAPI"
+                  "Kafka",
+                  "Datadog",
+                  "DynamoDB",
+                  "RDS",
+                  "Redis",
+                  "ReactJs",
+                  "NextJs"
                 ]
               }
             ]
           },
           {
             "organizationId": 2,
-            "organizationLogo": "https://bookshlf.in/images/smallLogo.svg",
+            "organizationLogo": "https://raw.githubusercontent.com/Bookshlf-in/Website/refs/heads/main/public/images/smallLogo.png",
             "organizationName": "Bookshlf | ARA Technologies",
             "isCurrentOrganization": false,
             "experience": [
@@ -149,11 +166,15 @@
                 "position": "Founding Engineer",
                 "employmentType": "Full Time",
                 "timeline": {
-                  "startDate": "Jan, 2022",
-                  "endDate": "May, 2022",
+                  "startDate": "July, 2023",
+                  "endDate": "Jan, 2024",
                   "isCurrent": false
                 },
                 "projects": [
+                  {
+                    "title": "Ordering Funnel",
+                    "details": "Worked with the team to streamline order funneling by tracking what consumers issues consumers were facing"
+                  },
                   {
                     "title": "UI/UX",
                     "details": "Worked with the Product Manager and UI/UX team to make user book purchase journey, book approve journey, admin panel, statistics etc."
@@ -168,37 +189,6 @@
                   }
                 ],
                 "skills": ["Product", "Figma", "Javascript", "RestAPIs"]
-              },
-              {
-                "id": 2,
-                "position": "Frontend Lead",
-                "employmentType": "Full Time",
-                "timeline": {
-                  "startDate": "July, 2022",
-                  "endDate": "Jan, 2023",
-                  "isCurrent": false
-                },
-                "projects": [
-                  {
-                    "title": "Components Designing and Website Build",
-                    "details": "Lead Frontend team to design the reusable and customizable components in react for bookshlf website."
-                  },
-                  {
-                    "title": "Automated Book Verification with ML Integration",
-                    "details": "Worked with backend team to integrate the bookshlf's automated book detection and verification module to automatically verify & approve books from admin panel in one click"
-                  },
-                  {
-                    "title": "Continous Integration and Deployment",
-                    "details": "Wrote unit testcases and added automated deployment for website with workflow success"
-                  }
-                ],
-                "skills": [
-                  "ReactJs",
-                  "Github",
-                  "Javascript",
-                  "RestAPIs",
-                  "NodeJs"
-                ]
               }
             ]
           },
@@ -207,6 +197,7 @@
             "organizationLogo": "https://play-lh.googleusercontent.com/YyZ4oxWo8gEJoTRk_5U48vtslIEvHYXdKfBZ_gHfHd7H2yFnfcqwS-61CdStiWsmbrI",
             "organizationName": "Acko",
             "isCurrentOrganization": false,
+            "isInternship": true,
             "experience": [
               {
                 "id": 1,
@@ -250,9 +241,10 @@
           },
           {
             "organizationId": 4,
-            "organizationLogo": "https://pbs.twimg.com/profile_images/1412862499800551428/n5QfBlee_400x400.png",
-            "organizationName": "Digicert",
+            "organizationLogo": "https://aboutssl.org/wp-content/uploads/2019/12/digicert-square.svg",
+            "organizationName": "QA Digicert",
             "isCurrentOrganization": false,
+            "isInternship": true,
             "experience": [
               {
                 "id": 1,
@@ -282,11 +274,12 @@
             "organizationLogo": "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
             "organizationName": "Mathworks",
             "isCurrentOrganization": false,
+            "isInternship": true,
             "experience": [
               {
                 "id": 1,
                 "position": "Engineering Development Group",
-                "employmentType": "Research Internship",
+                "employmentType": "Internship",
                 "timeline": {
                   "startDate": "May, 2022",
                   "endDate": "July, 2022",
