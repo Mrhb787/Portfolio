@@ -5,6 +5,9 @@ import TextAnimated from '../../assets/components/textanimations';
 import WorkExperienceTile from '../../assets/components/workexperiencetile';
 import ExperienceCard from '../../assets/components/experiencecard.jsx';
 import Steps from '../../assets/components/steps';
+import BuildCircleIcon from '@mui/icons-material/BuildCircle';
+import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
+
 const ExperienceItem = (props) => {
   const {
     organizationLogo,
@@ -18,7 +21,9 @@ const ExperienceItem = (props) => {
     <Stack spacing={2} className="experience-item reveal">
       {isCurrentOrganization && (
         <div className="experience-org">
-          <Chip color="success">Currently Working</Chip>
+          <Chip color="success" startDecorator={<BadgeOutlinedIcon />}>
+            Currently Working
+          </Chip>
         </div>
       )}
       {!isCurrentOrganization && (
@@ -27,7 +32,11 @@ const ExperienceItem = (props) => {
             Worked
           </Chip>
           {isInternship && (
-            <Chip color="warning" variant="outlined">
+            <Chip
+              color="warning"
+              variant="outlined"
+              startDecorator={<BuildCircleIcon />}
+            >
               Internship
             </Chip>
           )}

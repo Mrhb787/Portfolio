@@ -242,7 +242,7 @@
           {
             "organizationId": 4,
             "organizationLogo": "https://aboutssl.org/wp-content/uploads/2019/12/digicert-square.svg",
-            "organizationName": "QA Digicert",
+            "organizationName": "Digicert",
             "isCurrentOrganization": false,
             "isInternship": true,
             "experience": [
@@ -350,13 +350,13 @@
         "instituteLogo": "https://iiitl.ac.in/wp-content/uploads/2019/10/Final_Logo_IIITL.png",
         "degree": "Bachelor's Of Technology",
         "major": "Information Technology",
-        "grade": "8.61",
+        "grade": "8.91 CGPA",
         "startYear": "2019",
         "endYear": "2023"
       },
       "highSchool": {
         "schoolName": "Army Public School Cantt. Kanpur",
-        "schoolLogo": "https://apskanpur.com/images/Website/MainPage/APSKanpurLogo.png",
+        "schoolLogo": "https://apskanpur.com/assets/images/APSKanpur.png",
         "schoolBoard": "CBSE",
         "subjects": [
           "Physics",
@@ -372,7 +372,7 @@
       },
       "juniorHighSchool": {
         "schoolName": "Army Public School Cantt. Kanpur",
-        "schoolLogo": "https://apskanpur.com/images/Website/MainPage/APSKanpurLogo.png",
+        "schoolLogo": "https://apskanpur.com/assets/images/APSKanpur.png",
         "schoolBoard": "CBSE",
         "subjects": [
           "Science",

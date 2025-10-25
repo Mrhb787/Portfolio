@@ -39,6 +39,17 @@ a {
     align-items: center;
 }
 
+.section-sm {
+    min-height: 50vh;
+    min-width: 800px;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .hyperlink {
     font-weight: 500;
 }
